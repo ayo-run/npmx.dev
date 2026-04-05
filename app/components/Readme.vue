@@ -60,13 +60,19 @@ function handleClick(event: MouseEvent) {
 </script>
 
 <template>
-  <article class="readme max-w-[70ch] lg:max-w-none px-1" dir="auto" v-html="html" :style="{
-    '--i18n-note': '\'' + $t('package.readme.callout.note') + '\'',
-    '--i18n-tip': '\'' + $t('package.readme.callout.tip') + '\'',
-    '--i18n-important': '\'' + $t('package.readme.callout.important') + '\'',
-    '--i18n-warning': '\'' + $t('package.readme.callout.warning') + '\'',
-    '--i18n-caution': '\'' + $t('package.readme.callout.caution') + '\'',
-  }" @click="handleClick" />
+  <article
+    class="readme max-w-[70ch] lg:max-w-none px-1"
+    dir="auto"
+    v-html="html"
+    :style="{
+      '--i18n-note': '\'' + $t('package.readme.callout.note') + '\'',
+      '--i18n-tip': '\'' + $t('package.readme.callout.tip') + '\'',
+      '--i18n-important': '\'' + $t('package.readme.callout.important') + '\'',
+      '--i18n-warning': '\'' + $t('package.readme.callout.warning') + '\'',
+      '--i18n-caution': '\'' + $t('package.readme.callout.caution') + '\'',
+    }"
+    @click="handleClick"
+  />
 </template>
 
 <style scoped>
